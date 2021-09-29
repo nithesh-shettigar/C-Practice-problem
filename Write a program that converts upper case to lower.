@@ -1,14 +1,13 @@
 /*Write a program that converts upper case to lower*/
 #include <string.h>
- 
+
+/* The upper case alphabets ASCII value range is from 65 to 90 */ 
+   /*If the ASCII value of any character of the string is in the range between 65 to 90,Add 32 to the ASCII value of the character to convert into lower case.*/
+       
 void stringlowercase(char *s)
 {
 	int i;
-  /* The upper case alphabets ASCII value range is from 65 to 90 */ 
-   /*If the ASCII value of any character of the string is in the range between 65 to 90,
-
-Add 32 to the ASCII value of the character to convert into lower case.*/
-       
+  
     	for(i=0;s[i];i++)  
         {
           if(s[i]>=65 && s[i]<=90)
